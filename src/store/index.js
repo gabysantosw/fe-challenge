@@ -11,7 +11,11 @@ export default new Vuex.Store({
     async fetchStreams() {
       const request = await axios.get('api/streams.json');
       return request.data;
-    }
+    },
+    async fetchGames() {
+      const request = await axios.get('api/games.json');
+      return request.data;
+    },
   },
-  modules: {}
+  modules: {},
 });

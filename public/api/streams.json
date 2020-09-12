@@ -1,28 +1,28 @@
 [
   {
-    "name": "superstreamer",
-    "game": "mariosunshine",
+    "name": "Dupertreamer",
+    "game": "Mario Sunshine",
     "video": "https://source.unsplash.com/400x200/?videogame",
     "rating": "10",
     "isLive": "true"
   },
   {
-    "name": "pokestream",
-    "game": "pokemonyellow",
+    "name": "Poke-stream",
+    "game": "Pokemon Yellow",
     "video": "https://source.unsplash.com/400x200/?videogame",
     "rating": "10",
     "isLive": "true"
   },
   {
-    "name": "dancingwiththeviewers",
-    "game": "dancedancerevolution",
+    "name": "Dancing with the viewers",
+    "game": "Dance Dance Revolution",
     "video": "https://source.unsplash.com/400x200/?videogame",
     "rating": "10",
     "isLive": "false"
   },
   {
-    "name": "baller",
-    "game": "fifa5000",
+    "name": "Ball3r",
+    "game": "FIFA 5000",
     "video": "https://source.unsplash.com/400x200/?videogame",
     "rating": "1",
     "isLive": "true"

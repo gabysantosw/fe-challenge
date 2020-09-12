@@ -2,16 +2,18 @@
 export default {
   name: 'StreamCard',
   props: {
-    stream: Object
-  }
+    stream: Object,
+  },
 };
 </script>
 
 <template>
   <li>
-    <img :src="stream.video" alt="" />
-    <br />
-    <router-link :to="{ name: 'StreamDetail', params: { stream: stream } }">{{ stream.name }}</router-link>
-    <p>Playing: {{ stream.game }}</p>
+    <router-link class="card" :to="{ name: 'StreamDetail', params: { stream: stream } }">
+      <img :src="stream.video" alt="" />
+      <br />
+      <span class="card-name">{{ stream.name }}</span>
+      <span> is playing: {{ stream.game }}</span>
+    </router-link>
   </li>
 </template>

@@ -1,8 +1,65 @@
 @import './reset';
+
+// BASE STYLE
+$container-width: 60rem;
+
 body {
   font-family: sans-serif;
+  border-top: 0.25rem solid gray;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:focus,
+button:focus {
+  outline: 0.25rem dashed green;
+  outline-offset: 0.25rem;
 }
 
 button {
   cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Inconsolata', monospace;
+  margin-bottom: 0.5em;
+}
+
+.container {
+  max-width: $container-width;
+  position: relative;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 1rem 1rem;
+}
+
+nav {
+  position: fixed;
+  right: 2vw;
+  top: 0;
+}
+
+@media screen and (min-width: $container-width) {
+  nav {
+    position: absolute;
+  }
+}
+
+nav > a {
+  display: block;
+  background-color: grey;
+  text-decoration: none;
+  padding: 0.5em 1em 0.75em 1em;
+  border-radius: 0 0 1em 1em;
+}
+
+@media screen and (min-width: 40rem) {
+  .side {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+  }
 }

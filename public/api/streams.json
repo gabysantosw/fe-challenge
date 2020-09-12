@@ -1,0 +1,30 @@
+[
+  {
+    "name": "superstreamer",
+    "game": "mariosunshine",
+    "video": "https://source.unsplash.com/400x200/?videogame",
+    "rating": "10",
+    "isLive": "true"
+  },
+  {
+    "name": "pokestream",
+    "game": "pokemonyellow",
+    "video": "https://source.unsplash.com/400x200/?videogame",
+    "rating": "10",
+    "isLive": "true"
+  },
+  {
+    "name": "dancingwiththeviewers",
+    "game": "dancedancerevolution",
+    "video": "https://source.unsplash.com/400x200/?videogame",
+    "rating": "10",
+    "isLive": "false"
+  },
+  {
+    "name": "baller",
+    "game": "fifa5000",
+    "video": "https://source.unsplash.com/400x200/?videogame",
+    "rating": "1",
+    "isLive": "true"
+  }
+]

@@ -17,6 +17,9 @@ export default {
   methods: {
     addInteraction(event) {
       this.interactions.push(event.target.textContent);
+      if (this.interactions.length > 6) {
+        this.interactions.shift();
+      }
     },
     addDonation() {
       this.donations++;

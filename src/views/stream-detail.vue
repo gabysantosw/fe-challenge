@@ -11,7 +11,7 @@ export default {
       donations: 0,
       interactions: [],
       chat: [],
-      message: ''
+      message: '',
     };
   },
   methods: {
@@ -29,19 +29,19 @@ export default {
 
       this.chat.push(this.message);
       this.message = '';
-    }
-  }
+    },
+  },
 };
 </script>
 
 <template>
-  <div>
+  <main>
     <h1>{{ stream.name }}</h1>
-    <p>Currently playing: {{ stream.game }}</p>
+    <p class="subtitle">is currently playing: {{ stream.game }}</p>
 
     <section class="stream">
-      <h2>Viewer's interactions</h2>
-      <ul>
+      <img :src="stream.video" alt="" />
+      <ul class="stream-interactions">
         <li v-for="(interaction, index) of interactions" :key="index">
           {{ interaction }}
         </li>
@@ -67,5 +67,5 @@ export default {
         <button type="submit">Send</button>
       </form>
     </section>
-  </div>
+  </main>
 </template>

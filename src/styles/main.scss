@@ -2,6 +2,10 @@
 
 // BASE STYLE
 $container-width: 60rem;
+$light: hsl(170, 25%, 98%);
+$light-primary: hsl(170, 20%, 80%);
+$dark-primary: hsl(170, 54%, 25%);
+$dark: hsl(170, 20%, 15%);
 
 body {
   font-family: sans-serif;

@@ -3,6 +3,7 @@
     <nav>
       <router-link to="/">Catalog</router-link>
     </nav>
+
     <router-view />
   </div>
 </template>

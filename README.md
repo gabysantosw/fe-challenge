@@ -1,5 +1,10 @@
 # Front-end Challenge
 
+## Running the project
+
+1. `npm install`
+2. `npm run serve`
+
 ## Requirements
 
 - [ ] Catalog screen

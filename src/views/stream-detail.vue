@@ -50,18 +50,22 @@ export default {
     <div class="interactions">
       <button @click="addInteraction">👋</button>
       <button @click="addInteraction">💚</button>
+      <button @click="addInteraction">🎵</button>
+      <button @click="addInteraction">🎉</button>
+      <button @click="addInteraction">🔥</button>
+      <button @click="addInteraction">😂</button>
     </div>
     <div class="donations">
-      <button @click="addDonation">Donate</button>
-      <span>{{ donations }}donations</span>
+      <button @click="addDonation">Donate ></button>
+      <span>{{ donations }} donations</span>
     </div>
     <section class="chat">
-      <ul v-if="chat">
+      <ul class="chat-messages" v-if="chat">
         <li v-for="(message, index) of chat" :key="index">
           {{ message }}
         </li>
       </ul>
-      <form @submit="addMessage">
+      <form class="chat-input" @submit="addMessage">
         <label for="message"></label>
         <input id="message" type="text" v-model="message" required />
         <button type="submit">Send</button>

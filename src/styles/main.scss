@@ -9,16 +9,22 @@ $dark: hsl(170, 20%, 15%);
 
 body {
   font-family: sans-serif;
-  border-top: 0.25rem solid gray;
+  background-color: $light-primary;
+  border-top: 0.25rem solid $dark-primary;
+  color: $dark;
 }
 
 img {
   max-width: 100%;
 }
 
+a {
+  color: $dark;
+}
+
 a:focus,
 button:focus {
-  outline: 0.25rem dashed green;
+  outline: 0.25rem dashed $dark-primary;
   outline-offset: 0.25rem;
 }
 
@@ -54,7 +60,10 @@ nav {
 
 nav > a {
   display: block;
-  background-color: grey;
+  color: $light;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background-color: $dark-primary;
   text-decoration: none;
   padding: 0.5em 1em 0.75em 1em;
   border-radius: 0 0 1em 1em;
@@ -86,7 +95,7 @@ nav > a {
 
 .card {
   display: block;
-  background-color: lightblue;
+  background-color: $light;
   border-radius: 0.5rem;
   padding: 1em;
   margin-bottom: 1em;
@@ -117,7 +126,8 @@ a.card:hover {
   top: 0;
   bottom: 0;
   left: 0;
-  background: green;
+  background: $dark-primary;
+  color: $light;
   border-radius: 0.5rem 0 0 0.5rem;
   padding: 1em;
 }
